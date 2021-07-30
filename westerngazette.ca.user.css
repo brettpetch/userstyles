@@ -1,0 +1,105 @@
+/* ==UserStyle==
+@name           Western Gazette Style
+@namespace      github.com/brettpetch/userstyles
+@version        2020.01.06
+@description    `A Stylish theme template for westerngazette.ca.`
+@author         Brett Petch
+==/UserStyle== */
+
+@-moz-document domain("westerngazette.ca") {
+
+    :root {
+        /* Variables */
+        --color-bg: #000;
+        --color-bg-footer: #222;
+        --color-bg-secondary: #333;
+        --color-fg: #fff;
+        --color-fg-header: #f3f3f3;
+        --color-fg-secondary: #ccc;
+        --color-fg-tertiary: white;
+    }
+
+    body {
+        color: var(--color-fg);
+        background-color: var(--color-bg) !important;
+    }
+    .tncms-region-ads {
+        background-color: var(--color-bg);
+    }
+    .progress {
+        background-color: var(--color-bg-secondary);
+    }
+    #site-header-container {
+        background-color: var(--color-bg);
+        color: var(--color-fg-header);
+    }
+    #site-navbar-container, #main-navigation {
+        background-color: var(--color-bg);
+        color: var(--color-fg-tertiary) !important;
+    }
+    .navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+        color: var(--color-fg-secondary);
+    }
+    a, a:hover, .pagination > li > a, .pagination > li > a:hover, .btn-link, .dropdown-menu > li > a, blockquote, blockquote p, .asset .asset-body blockquote p {
+        color: var(--color-fg-secondary);
+    }
+    .dropdown-menu {
+        background-color: var(--color-bg-secondary);
+        color: var(--color-fg-secondary);
+    }
+    #main-body-container .container, #main-body-container .container_fluid, .well-main {
+        background-color: var(--color-bg-secondary);
+    }
+    .label-flag {
+        background-color: rgba(79, 38, 131, .7) !important;
+        color: var(--color-fg-tertiary);
+        font-weight: 600;
+        padding: 10px;
+    }
+    .asset .asset-body p, .asset #asset-content p {
+        color: var(--color-fg-secondary);
+    }
+    .tnt-headline a:link, .tnt-headline a:visited {
+        color: var(--color-fg-secondary);
+    }
+    .text-muted {
+        color: var(--color-fg);
+    }
+    .block-title.dark > .block-title-inner > * {
+        color: var(--color-fg-tertiary);
+    }
+    #site-footer-container, #site-footer {
+        background-color: var(--color-bg-footer);
+        color: var(--color-fg-tertiary);
+    }
+    #site-copyright a, #site-footer a {
+        color: var(--color-fg-secondary);
+    }
+    #site-top-nav-container, #site-top-nav {
+        background-color: var(--color-bg);
+    }
+    .card-panel {
+        background-color: var(--color-bg) !important;
+    }
+    .card.event-list {
+        background-color: var(--color-bg) !important;
+        color: var(--color-fg-secondary);
+        padding: 10px;
+    }
+    .panel {
+        background-color: var(--color-bg);
+    }
+    .panel-default > .panel-heading {
+        background-color: var(--color-bg-secondary);
+        color: var(--color-fg-secondary);
+    }
+    .panel-footer {
+        background-color: var(--color-bg);
+    }
+    .breaking, .breaking .container {
+        background-color: var(--color-bg) !important;
+    }
+    .breaking .card-headline a, .breaking .card-meta time, .breaking .card-meta a {
+        color: #B33 !important;
+    }
+}
